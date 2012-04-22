@@ -39,7 +39,7 @@ You will receive a confirmation email - click the link in that email to finish t
 
 ## Send Email
 
-<pre>
+```javascript
   ses.send({
       from: 'foo@mailinator.com'
     , to: ['bar@mailinator.com', 'jim@mailinator.com']
@@ -50,7 +50,7 @@ You will receive a confirmation email - click the link in that email to finish t
         , html: 'This is the <b>html</b> body of the message.'
     }
   });
-</pre>
+```
 
 ## Use Mustache Templates
 
@@ -78,23 +78,23 @@ This will look for the file in a '/views/' folder and assumes no further directo
 
 ## Get verified email addresses
 
-<pre>
+```javascript
   ses.listVerifiedEmailAddresses(function(result) {
     console.log(result);
   });
-</pre>
+```
 
 ## Deleted a verified email address
 
-<pre>
+```javascript
   ses.deleteVerifiedEmailAddress('foo@mailinator.com', function(result) {
     console.log(result);
   });
-</pre>
+```
 
 ## Get Quota and Stats
 
-<pre>
+```javascript
   ses.getSendQuota(function(result) {
     console.log(result);
   });
@@ -102,4 +102,4 @@ This will look for the file in a '/views/' folder and assumes no further directo
   ses.getSendStatistics(function(result) {
     console.log(result);
   });
-</pre>
+```
