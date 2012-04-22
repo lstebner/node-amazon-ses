@@ -58,6 +58,7 @@ You can also send an email using a Mustache template instead of putting all the 
 
 ```javascript
   ses.send({
+    //from, to, etc
     template: 'Hello {{name}},<br /><br />Welcome to <strong>The Greatest Email Ever!</strong>',
     templateData: { name:'Hamburglar' }
   });
@@ -67,6 +68,7 @@ Not saving you a ton of work there yet, but the beauty is that you can also pass
 
 ```javascript
   ses.send({
+    //from, to, etc
     template: '/welcome.txt',
     templateData: { name:'Hamburglar' }
   });
