@@ -6,8 +6,7 @@
   "dependencies": {
     "request": "2.1.1",
     "underscore": "1.2.1",
-    "xml2js": "0.1.11",
-    "mustache": "1.0.15"
+    "xml2js": "0.1.11"
   },
   "keywords": ["email", "amazon", "ses"],
   "repository": "git://github.com/jjenkins/node-amazon-ses.git",
