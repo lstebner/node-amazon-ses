@@ -56,17 +56,21 @@ You will receive a confirmation email - click the link in that email to finish t
 
 You can also send an email using a Mustache template instead of putting all the content into the 'body' object passed to send(). To do so simply specify a `template` and `templateData`. Here is a super simple example:
 
+```javascript
   ses.send({
     template: 'Hello {{name}},<br /><br />Welcome to <strong>The Greatest Email Ever!</strong>',
     templateData: { name:'Hamburglar' }
   });
+```
 
 Not saving you a ton of work there yet, but the beauty is that you can also pass it a file name and it will use that file as the Mustache template. It's syntactically the same, you would just pass the filename instead of the template string.
 
+```javascript
   ses.send({
     template: '/welcome.txt',
     templateData: { name:'Hamburglar' }
   });
+```
 
 This will look for the file in a '/views/' folder and assumes no further directories or file extensions.
 
